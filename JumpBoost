@@ -13,7 +13,7 @@ local function steppedOn(part)
 		--Remove the 2 lines below to make the JumpBoost infinite
 		wait(2) 
 		
-		--parent.Humanoid.JumpPower = 50
+		--parent.Humanoid.JumpHeight = 50
 		parent.Humanoid.JumpPower = 50  
 	end 
 end 
