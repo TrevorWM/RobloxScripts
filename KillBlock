@@ -1,0 +1,13 @@
+script.Parent.Touched:connect(function(hit)
+	if hit and hit.Parent and hit.Parent:FindFirstChild("Humanoid") then
+  --A player's Max Health is 100
+    --This sets the player's health to 0.
+    hit.Parent.Humanoid.Health = 0 
+    
+    --If you want them to lose health use this line instead.
+    --Change the 50 to whatever number you would like.
+    --hit.Parent.Humanoid.Health -= 50
+		
+	end 
+end)
+
