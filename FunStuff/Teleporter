@@ -3,12 +3,19 @@
 --Add a part named Entrance
 --Add a part named Exit
 
-local teleportEntrance = script.Parent
-
---Change Teleporter1 to whatever your folder name is
-local teleportFolder = workspace.Teleporter1
-
+local teleportFolder = script.Parent
+local teleportEntrance = teleportFolder.Entrance
 local teleportExit = teleportFolder.Exit
+
+local exitCFrame = teleportExit.CFrame + Vector3.new(0,2.5,0)
+
+
+teleportEntrance.Touched:Connect(function(hit)
+	if hit.Parent:FindFirstChild('Humanoid') then
+		hit.Parent.HumanoidRootPart.CFrame = exitCFrame
+	end
+end)
+
 
 local exitCFrame = teleportExit.CFrame + Vector3.new(0,2.5,0)
 
