@@ -17,8 +17,34 @@ end
 local Orb = Instance.new('Part', workspace) -- create a part in the workspace
 Orb.Anchored = true -- anchor it so it doesnt fall down
 Orb.Material = 'Neon' -- make it glow
-Orb.Shape = 'Ball' -- make it a sphere
+
+----------------------------------------------------------------
+--															  --
+--															  --
+--															  --
+--				CHANGE HIDDEN PARTS HERE					  --
+--															  --
+--															  --
+--															  --
+----------------------------------------------------------------
+
+--You can change the shape of your part here!
+--Ball	A spherical shape, like a basketball.
+--Cylinder	A rod-like shape, like a tin can.
+--Block	The default, brick shape.
+Orb.Shape = 'Ball'
+
+--You can change the size of your shape with this. This is a good size,
+--but if you want to make it bigger or smaller you can!
 Orb.Size = Vector3.new(3,3,3) -- make it 3x3x3
+
+--Here you can change your BrickColour. 
+--You can pick a colour with the little box that appears when
+--you hover over the numbers with your mouse
+Orb.Color = Color3.new(1, 1, 1) 
+
+
+
 Orb.CanCollide = false -- disable part colliding with other parts
 
 local Light = Instance.new('PointLight', Orb)
