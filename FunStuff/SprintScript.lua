@@ -1,3 +1,5 @@
+--We will use left Ctrl to sprint so that it works easier in Roblox Studio!
+
 local userInput = game:GetService("UserInputService")
 local players = game:GetService("Players")
 
